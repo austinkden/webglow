@@ -121,6 +121,7 @@ main {
         align-items: center;
         justify-content: center;
         min-height: 95vh;
+        padding: 20px;
 
         div.e-container {
             display: flex;
