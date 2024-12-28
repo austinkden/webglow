@@ -41,17 +41,18 @@ main {
     }
 
     p {
-        text-align: justify;
+        text-align: left;
         font-size: 15px;
         max-width: 40vw;
         text-wrap: wrap;
         line-height: 1.2;
+        width: 100%;
 
-        b {
+        strong {
             font-weight: bold;
         }
 
-        i {
+        em {
             font-style: italic;
         }
 
@@ -73,6 +74,7 @@ main {
 a.back {
     text-decoration: none;
     color: #0f6358;
+    background: rgba(255, 255, 255, 0.85);
     font-size: 20px;
     cursor: pointer;
     position: fixed;
@@ -87,4 +89,19 @@ a.back {
 
 a.back:hover {
     color: #8f1b3b;
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        padding-top: 50px;
+
+        p {
+            width: 90%;
+            text-align: left;
+            max-width: 90%;
+            font-size: 15px;
+            text-wrap: wrap;
+        }
+    }
 }
